@@ -24,13 +24,6 @@
 	  <preference name="android-installLocation"   value="auto"/>
 	  <preference name="permissions"   value="INTERNET"/>
 	  
-	  <!--Para acceder a paginas en internet-->
-	  <allow-intent href="https://*/*"/>
-	  <acces origin="https://*/*"/>
-	  <allow-intent href="http://*/*"/>
-	  <acces origin="http://*/*"/>
-	  <plugin name= "cordova-plugin-whitelist" source="npm"/>
-	  
 	  <!--Plugins -->
 	  <!-- Core plugins -->
 	  <plugin name= "cordova-plugin-device" spec="~1.1.4" />
@@ -39,7 +32,7 @@
 	  
 	  <!-- <plugin name= "cordova-plugin-inappbrowser" spec="~1.7.0" /> -->
 	  
-	  <plugin name= "cordova-plugin-geolocation" source="npm" />
+	  <plugin name= "cordova-plugin-geolocation" spec="2.4.3" />
 	   <!-- Third part plugins -->
 	   
 	   <!-- Colocar icono app -->
