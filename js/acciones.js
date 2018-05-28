@@ -26,20 +26,20 @@ function onDeviceReady(){
 	  var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 	  function onSuccess(position){
 		  
-		  alert ('Latitude:'         + position.coords.latitude       +'\n'+ 
-		      'Longitude:'         + position.coords.longitude       +'\n'+ 
-		      'Altitude:'         +position.coords.altitude         +'\n'+
-			  'Accuracy:'         +position.coords.accuracy        +'\n'+
-			  'Altitude Accuracy:'   +position.coords.altitudeAccuracy  +'\n'+
-			  'Heading:'         +position.coords.heading         +'\n'+
-			  'Speed:'         +position.coords.speed         +'\n'+
-		      'Timestamp'         +position.coords.timestamp         +'\n');
+		  alert ('Latitude:'         + position.coords.latitude       + '\n'+ 
+		      'Longitude:'         + position.coords.longitude       + '\n'+ 
+		      'Altitude:'         + position.coords.altitude         + '\n'+
+			  'Accuracy:'         + position.coords.accuracy        + '\n'+
+			  'Altitude Accuracy:'   + position.coords.altitudeAccuracy  + '\n'+
+			  'Heading:'         + position.coords.heading         + '\n'+
+			  'Speed:'         + position.coords.speed         + '\n'+
+		      'Timestamp:'         + position.timestamp         + '\n');
 	
 	};
 	
 	
 	function onError(error){
-		alert('code:'+error.code  +'\n'+'message:'+ error.message+ '\n');
+		alert('code:' +error.code  +'\n'+'message:'+ error.message+ '\n');
 		}
 	}
 	
@@ -59,7 +59,7 @@ function onDeviceReady(){
 		$('#aaccuracy').html(position.coords.altitudeAccuracy);
 		$('#headingg').html(position.coords.heading);
 		$('#speed').html(position.coords.speed);
-		$('#timestamp').html(position.coords.timestamp);
+		$('#timestamp').html(position.timestamp);
 	};
 	
 	function onError(error){
